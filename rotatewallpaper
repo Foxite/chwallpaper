@@ -1,0 +1,12 @@
+#!/bin/bash
+
+source $HOME/.config/rotatewallpaper.conf
+
+if [[ -z "$1" ]]
+then
+	wpdir=$WALLPAPER_DIRECTORY
+else
+	wpdir=$1
+fi
+file=$(ls $wpdir/* | shuf | tail -1)
+chwallpaper-$XDG_SESSION_DESKTOP $file

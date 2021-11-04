@@ -1,0 +1,2 @@
+#!/bin/bash
+chwallpaper-$XDG_SESSION_DESKTOP $1
