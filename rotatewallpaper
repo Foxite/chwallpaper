@@ -1,6 +1,10 @@
 #!/bin/bash
 
-source $HOME/.config/rotatewallpaper.conf
+source /etc/rotatewallpaper.conf
+if [[ -e $HOME/.config/rotatewallpaper.conf ]]
+then
+	source $HOME/.config/rotatewallpaper.conf
+fi
 
 if [[ -z "$1" ]]
 then

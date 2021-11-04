@@ -3,5 +3,5 @@ Description=Pick a new wallpaper from a configured folder
 
 [Service]
 Type=oneshot
-ExecStart=/home/foxite/bin/rotatewallpaper
+ExecStart=/usr/bin/rotatewallpaper
 
