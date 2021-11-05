@@ -13,4 +13,4 @@ else
 	wpdir=$1
 fi
 file=$(ls $wpdir/* | shuf | tail -1)
-chwallpaper-$XDG_SESSION_DESKTOP $file
+chwallpaper-$XDG_SESSION_DESKTOP "$file"
